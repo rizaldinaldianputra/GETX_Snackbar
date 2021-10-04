@@ -106,34 +106,18 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Get.snackbar(
-            "Hey i'm a Get SnackBar!", // title
-            "It's unbelievable! I'm using SnackBar without context, without boilerplate, without Scaffold, it is something truly amazing!", // message
-            icon: Icon(Icons.alarm),
-            shouldIconPulse: true,
-            onTap: () {},
-            barBlur: 20,
-            isDismissible: true,
-            duration: Duration(seconds: 3),
-          );
-          floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Get.snackbar(
-            "Hey i'm a Get SnackBar!", // title
-            "It's unbelievable! I'm using SnackBar without context, without boilerplate, without Scaffold, it is something truly amazing!", // message
-            icon: Icon(Icons.alarm),
-            shouldIconPulse: true,
-            onTap: () {},
-            barBlur: 20,
-            isDismissible: true,
-            duration: Duration(seconds: 3),
-          );
-        },
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      floatingActionButton: FloatingActionButton(onPressed: () {
+        Get.snackbar(
+          "Hey i'm a Get SnackBar!", // title
+          "It's unbelievable! I'm using SnackBar without context, without boilerplate, without Scaffold, it is something truly amazing!", // message
+          icon: Icon(Icons.alarm),
+          shouldIconPulse: true,
+
+          barBlur: 20,
+          isDismissible: true,
+          duration: Duration(seconds: 3),
+        );
+      }), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
